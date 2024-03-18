@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Dashboard from './components/Dashboard/Dashboard';
+import Header from './components/Header/Header';
+import UserContext from './contexts/userContext';
 
 function App() {
+
+  const [isAdminUser, setIsAdminUser] = useState(true);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <UserContext.Provider value={[isAdminUser,setIsAdminUser]} >
+            <Header/>
+            <Dashboard/>
+        </UserContext.Provider>
+        <div id="x" className='modalPortal'></div>
+      </div>
+      
   );
 }
 

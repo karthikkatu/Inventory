@@ -1,0 +1,125 @@
+.modal{
+    scale:1.35;
+    height:300px;
+    width:450px;
+    position:absolute;
+    z-index: 3;
+    background-color: rgb(44, 43, 43);
+    color:#fcfafa;
+    border-radius: 20px;
+}
+
+.backDrop{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100vh;
+    width:100vw;
+    z-index:2;
+    background-color: rgba(63, 62, 62, 0.7);
+}
+
+.title{
+    margin: 20px;
+    margin-bottom: 5px;
+    font-weight:normal;
+    font-size: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content:space-between;
+}
+
+.productName{
+    margin-left: 20px;
+    margin-bottom: 10px;;
+}
+
+
+form{
+    height:200px;
+    width:450px;
+    color: white;
+    
+}
+
+.inputFieldContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin:5px;
+    padding: 3px 10px;
+    padding-left: 0px;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input{
+    color:rgb(237, 218, 218);
+    flex-wrap: wrap;
+    flex-grow: 5;
+    margin: 0px 5px;
+    padding:5px;
+    font-weight: bold;
+    border-radius: 8px;
+    border:none;
+    background-color: rgb(102, 102, 102);
+}
+
+.close{
+    font-weight: bolder;
+    color:chartreuse;
+    font-size:30px;
+}
+
+.submitButton {
+    background-color:#86c63c;
+    font-size:17px;
+    width: 100px;
+    border-radius: 8px;
+    height: 30px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.cancelButton{
+    width: 100px;
+    color: #86c63c;
+    font-size:15px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.cancelButton:hover{
+    border:solid 1px white;
+}
+
+.buttonContainers{
+    margin-top:10px;
+    padding-left:100px;
+}
+
+input:disabled {
+    background-color:rgb(134, 198, 60, 0.3);
+}
+
+
+

@@ -1,0 +1,19 @@
+.actionIcons > img{
+    height:30px;
+    width:30px;
+    filter: invert(100%);
+    margin: 0px 5px;
+}
+
+button {
+    border:none;
+    background-color: transparent;
+    margin: 5px;
+}
+
+button:disabled {
+    border:none;
+    color:red;
+    filter: invert(75%);
+}
+

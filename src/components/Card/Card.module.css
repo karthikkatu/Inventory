@@ -1,0 +1,38 @@
+.card{
+    height: 150px;
+    width: 23%;
+    display:flex;
+    padding: 10px;
+    margin:3px;
+    border-radius: 20px;
+    background-color: rgb(9, 76, 9);
+}
+
+.cardIcon > img{
+    width: 50px;
+    height: 50px;
+    margin-top:20px;
+    margin-left: 20px;
+    filter: invert(100%);
+    border:none;
+}
+
+.cardInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 300px;
+    font-family:Sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight:bold;
+    color:white;
+}
+
+.cardCount{
+    margin-top:20px;
+    margin-left:20px;
+    font-size: 45px;
+    font-weight:bold;
+}
